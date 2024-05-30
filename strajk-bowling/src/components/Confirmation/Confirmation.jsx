@@ -46,7 +46,8 @@ function Confirmation({ confirmationDetails, setConfirmation }) {
             <p>Total:</p>
             <p data-testid='total_price'>{confirmationDetails.price} sek</p>
           </article>
-          <button
+          <button 
+          data-testid='navigateBtn'
             className='button confirmation__button'
             onClick={(event) => {
               event.preventDefault();
